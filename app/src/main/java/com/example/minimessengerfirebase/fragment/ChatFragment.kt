@@ -18,7 +18,6 @@ class ChatFragment : Fragment() {
     private lateinit var binding: FragmentChatBinding
     private val chatAdapter = ChatAdapter()
     private val db = Firebase.firestore
-    private val collectionRef = db.collection("user")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,16 +44,18 @@ class ChatFragment : Fragment() {
 
     private fun setUpListener() {
         binding.buttomInput.setOnClickListener {
+            val collectionRef = db.collection("user")
             val message = hashMapOf(
                 "message" to binding.edText.text.toString()
             )
-            collectionRef.add(message).addOnSuccessListener {
+                collectionRef.add(message).addOnSuccessListener {
                 Log.e("Success", "$it")
             }
         }
     }
 
     private fun getCollectionData() {
+        val collectionRef = db.collection("user")
         collectionRef.addSnapshotListener { value, e ->
             if (e != null) {
                 Log.w(TAG, "Listen failed.", e)
