@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858890012514",
+    "project_id": "minimessengerfirebase",
+    "storage_bucket": "minimessengerfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858890012514:android:cc1564a85a36d83a318e3b",
+        "android_client_info": {
+          "package_name": "com.example.minimessengerfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858890012514-badp39nsda8m4he2829h1tqh3ao3c5ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpsAuAoGXaZj7gRFla_rLcnScJQpoF1iA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858890012514-badp39nsda8m4he2829h1tqh3ao3c5ur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
